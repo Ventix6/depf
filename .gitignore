@@ -1,0 +1,42 @@
+# --- Unity Generated ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+
+# --- IDE / Visual Studio / Rider ---
+.idea/
+.vscode/
+*.sln
+*.csproj
+*.unityproj
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# --- OS Generated ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Builds & Exports ---
+*.apk
+*.aab
+*.unitypackage
+*.zip
+
+# --- WICHTIG FÜR DICH ---
+# Wir ignorieren KEINE .meta files, .asset files (ScriptableObjects) 
+# oder .unity (Szenen), da dein Inventory-System diese DATEN braucht.
