@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &393000301786137099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8961880637486636436}
+  - component: {fileID: 629076782220026054}
+  - component: {fileID: 1695988920663296168}
+  - component: {fileID: 6392697639541627618}
+  m_Layer: 0
+  m_Name: Player_LargeBackpack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8961880637486636436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393000301786137099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -216.57909, y: 9.85449, z: -152.95334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629076782220026054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393000301786137099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612cd67f3b1a07b43aef479e60305616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiInventory
+  gridsSpec:
+  - id: grid
+    size: {x: 4, y: 4}
+    inventoryType: 2
+    restrictToDefinition: 0
+    allowedDefinition: []
+  - id: grid_1
+    size: {x: 1, y: 4}
+    inventoryType: 2
+    restrictToDefinition: 0
+    allowedDefinition: []
+  - id: grid_2
+    size: {x: 5, y: 1}
+    inventoryType: 2
+    restrictToDefinition: 0
+    allowedDefinition: []
+  - id: grid_2_1
+    size: {x: 5, y: 1}
+    inventoryType: 2
+    restrictToDefinition: 0
+    allowedDefinition: []
+  lootTable: {fileID: 0}
+  lootSeed: 0
+  lootGenerated: 0
+--- !u!114 &1695988920663296168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393000301786137099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9652811d4306214eabb0adcf2e4d0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryLayoutData
+  cellSize: {x: 64, y: 64}
+  cellPadding: {x: 4, y: 4}
+  panelSize: {x: 1200, y: 800}
+  layout:
+  - gridId: grid
+    posPxTL: {x: -0, y: 0}
+    overrideSize: 1
+    sizeOverride: {x: 4, y: 4}
+    bgColor: {r: 0.16, g: 0.16, b: 0.18, a: 1}
+    framePx: 0
+  - gridId: grid_1
+    posPxTL: {x: 289, y: -0}
+    overrideSize: 1
+    sizeOverride: {x: 1, y: 4}
+    bgColor: {r: 0.16, g: 0.16, b: 0.18, a: 1}
+    framePx: 0
+  - gridId: grid_2
+    posPxTL: {x: -0, y: 289}
+    overrideSize: 1
+    sizeOverride: {x: 5, y: 1}
+    bgColor: {r: 0.16, g: 0.16, b: 0.18, a: 1}
+    framePx: 0
+  - gridId: grid_2_1
+    posPxTL: {x: -0, y: 374}
+    overrideSize: 1
+    sizeOverride: {x: 5, y: 1}
+    bgColor: {r: 0.16, g: 0.16, b: 0.18, a: 1}
+    framePx: 0
+--- !u!114 &6392697639541627618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393000301786137099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ca560289bd530478dd5cdae7639f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventorySeed
+  Target: {fileID: 629076782220026054}
+  SeedGrids:
+  - gridId: grid
+    items: []
+  - gridId: grid_1
+    items: []
+  - gridId: grid_2
+    items: []
+  - gridId: grid_2_1
+    items: []
